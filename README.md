@@ -59,6 +59,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+  Closure allows a function nested or used inside another function to access the data of the parent function.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -80,9 +81,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  In the console.log of the return function. It calls for an argument whose parameter is placed in the parent function.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  "Dan rolled a" will always be the same, but the number at the end can change depending on the product of newRoll's math function.
 c. What is the lexical scope of `newRoll`? 
-
+  newRoll's scope is within the return function of personalDice. It is only accessible within that return function, though, not by personalDice.
 
 ### Task 3 - Stretch Goals
 
